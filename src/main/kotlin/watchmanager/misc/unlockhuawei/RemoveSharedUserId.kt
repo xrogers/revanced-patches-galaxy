@@ -2,6 +2,7 @@ package app.revanced.patches.watchmanager.misc.unlockhuawei
 
 import app.revanced.patcher.data.ResourceContext
 import app.revanced.patcher.patch.ResourcePatch
+import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch
 
 @Patch(
@@ -16,7 +17,7 @@ object RemoveSharedUserId : ResourcePatch() {
             val document = editor.file
             // val activities = document.getElementsByTagName("activity")
 
-            document.removeAttribute('android:sharedUserId')
+            document.documentElement.removeAttribute("android:sharedUserId")
         }
     }
 }
