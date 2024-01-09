@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-group = "your.org"
+group = "pl.lgit"
 
 repositories {
     mavenCentral()
@@ -32,14 +32,14 @@ kotlin {
 
 tasks.withType(Jar::class) {
     manifest {
-        attributes["Name"] = "Your Patches"
+        attributes["Name"] = "Galaxy Wearable patches"
         attributes["Description"] = "Patches for ReVanced."
         attributes["Version"] = version
         attributes["Timestamp"] = System.currentTimeMillis().toString()
-        attributes["Source"] = "git@github.com:you/revanced-patches.git"
-        attributes["Author"] = "You"
-        attributes["Contact"] = "contact@your.homepage"
-        attributes["Origin"] = "https://your.homepage"
+        attributes["Source"] = "git@github.com:xrogers/revanced-patches-galaxy.git"
+        attributes["Author"] = "xrogers"
+        attributes["Contact"] = "lech.groblewicz@lgit.pl"
+        attributes["Origin"] = "https://lgit.pl"
         attributes["License"] = "GNU General Public License v3.0"
     }
 }
@@ -82,9 +82,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "Your Patches"
+                name = "Galaxy Wearable patches"
                 description = "Patches for ReVanced."
-                url = "https://your.homepage"
+                url = "https://lgit.pl"
 
                 licenses {
                     license {
@@ -94,15 +94,15 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = "Your ID"
-                        name = "Your Name"
-                        email = "contact@your.homepage"
+                        id = "xrogers"
+                        name = "Lech Groblewicz"
+                        email = "lech.groblewicz@lgit.pl"
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/you/revanced-patches.git"
-                    developerConnection = "scm:git:git@github.com:you/revanced-patches.git"
-                    url = "https://github.com/you/revanced-patches"
+                    connection = "scm:git:git://github.com/xrogers/revanced-patches-galaxy.git"
+                    developerConnection = "scm:git:git@github.com:xrogers/revanced-patches-galaxy.git"
+                    url = "https://github.com/xrogers/revanced-patches-galaxy"
                 }
             }
         }
