@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/xrogers/revanced-patches-galaxy/compare/v1.0.0...v1.1.0) (2024-01-09)
+
+
+### Features
+
+* **galaxy:** Add dummy patch to make other galaxy apps patchable ([1b128d7](https://github.com/xrogers/revanced-patches-galaxy/commit/1b128d756c70970a5224de3c69d4b6d91cb12696))
+
 # 1.0.0 (2024-01-09)
 
 
